@@ -1,5 +1,5 @@
 import React from "react"
-import Frase from "./frases"
+import Frase from "./Frase"
 
 function HelloWord(){
     return (
