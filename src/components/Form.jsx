@@ -1,15 +1,19 @@
 import React from "react";
 import { useState } from "react";
+// import imagem from "../Img/imgem.jpg";
+// import imagemDois from "../Img/imgemDois.jpg";
 
 function Form(){
     function cadastraUsuario(e){
         e.preventDefault()
-        console.log(name)
-        console.log(Password)
-        console.log('cadastrou com sucesso!')
+        // console.log(name)
+        // console.log(Password)
+        // console.log('cadastrou com sucesso!')
+        console.log(`usuario ${name} foi cadastrado com a senha: ${Password}`)
     }
-    const[name, setName] = useState()
+    const[name, setName] = useState('img')
     const[Password, setPassword] = useState()
+    // const[scrImagem, setImagens] = useState(imagem)
 
 
     return(
@@ -21,6 +25,7 @@ function Form(){
                 <input type='text' 
                  id="name" 
                  name="name"
+                //  value={name}
                  placeholder="Digite o seu nome" 
                  onChange={(e)=>setName(e.target.value)}></input>
             </div>

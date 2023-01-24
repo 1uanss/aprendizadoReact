@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "./event/Button";
+
 
 function Evento({numero}){
     function meuEvento(){
@@ -7,7 +9,8 @@ function Evento({numero}){
     return(
     <div>
         <p> Clique para ativar o evento</p>
-        <button onClick={meuEvento} >Ativar</button>
+        <Button Event={meuEvento} text="primeiro evento"/>
+        {/* <button onClick={meuEvento} >Ativar</button> */}
     </div>
     )
 }
