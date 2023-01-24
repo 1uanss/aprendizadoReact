@@ -1,18 +1,14 @@
-import React from "react";
-import Button from "./event/Button";
+import Button from './evento/Button'
 
-
-function Evento({numero}){
+function Evento(){
     function meuEvento(){
-        console.log(`opa,fui ativado. ${numero}`)
+        console.log("Ativando primeiro evento.")
     }
     return(
-    <div>
-        <p> Clique para ativar o evento</p>
-        <Button Event={meuEvento} text="primeiro evento"/>
-        {/* <button onClick={meuEvento} >Ativar</button> */}
-    </div>
+        <div>
+            <p>Clique para disparar um evento:</p>
+            <Button event={meuEvento} text="primeiro Evento"> </Button>
+        </div>
     )
 }
-
 export default Evento
